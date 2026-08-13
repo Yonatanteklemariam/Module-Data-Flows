@@ -80,3 +80,13 @@ function printStudents(arr) {
 }
 
 printStudents(hogwarts);
+
+function printTeachers(arr) {
+  for (const { firstName, lastName, house, pet } of arr) {
+    if (pet !== null) {
+      console.log(`${firstName} ${lastName}`);
+    }
+  }
+}
+
+printTeachers(hogwarts);
